@@ -1,0 +1,49 @@
+<html>
+ <head>
+ <!-- Required meta tags -->
+ <meta charset="utf-8">
+
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-
+to-fit=no">
+
+
+ <!-- Bootstrap CSS -->
+ <link rel="stylesheet" href="css/bootstrap.min.css">
+
+ <title>Blog Administrator Portal</title>
+ </head>
+<body>
+ <div class="container justify-content-center">
+ <!-- Table code goes here -->
+  <table class="table table-striped">
+  <thead class="thead-dark">
+  <tr>
+  <th scope="col">#</th>
+  <th scope="col">Title</th>
+  <th scope="col">Created At</th>
+  </tr>
+  </thead>
+  <tbody id="posts">
+  </tbody>
+  </table>
+  
+  </div>
+  
+  <div class="form-inline mb-3">
+  <select id="sort-field" class="form-control mr-2">
+    <option value="id">ID</option>
+    <option value="title">Title</option>
+    <option value="created_date">Created Date</option>
+  </select>
+  <select id="sort-direction" class="form-control mr-2">
+    <option value="asc">Ascending</option>
+    <option value="desc">Descending</option>
+  </select>
+  <button class="btn btn-primary" id="sort-button">Sort</button>
+  </div>
+   
+   <script src="js/jquery-3.7.1.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+ <script src="js/posts.js"></script>
+</body>
+</html>
